@@ -6,7 +6,7 @@
 /*   By: wting <wting@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 12:37:49 by wting             #+#    #+#             */
-/*   Updated: 2022/04/16 12:42:11 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/16 12:52:11 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_strlen(char *input)
 	count = 0;
 	while (input[i] != '\0')
 	{
-		if (input[i] >= '1' && input[i] >= '9')
+		if (input[i] >= '1' && input[i] <= '9')
 			++count;
 		++i;
 	}
