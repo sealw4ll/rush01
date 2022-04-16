@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   createbox.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wting <wting@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: lchew <lchew@42kl.edu.my>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/16 12:37:49 by wting             #+#    #+#             */
-/*   Updated: 2022/04/16 12:54:34 by wting            ###   ########.fr       */
+/*   Created: 2022/04/16 17:11:40 by lchew             #+#    #+#             */
+/*   Updated: 2022/04/16 18:30:27 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int	ft_boxsize(char *input)
+#include <stdlib.h>
+int	**createbox(int **box, int n)
 {
-	int count;
 	int i;
-
+	
 	i = 0;
-	count = 0;
-	while (input[i] != '\0')
+	box = malloc(sizeof(int *)*n);
+	while (i < n)
 	{
-		if (input[i] >= '1' && input[i] <= '9')
-			++count;
-		++i;
+		box[i] = malloc(sizeof(int)*n);
+		i++;
 	}
-	count = count / 4;
-	return (count);
+	return (box);
 }
