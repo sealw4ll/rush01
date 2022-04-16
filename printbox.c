@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   printbox.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wting <wting@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 18:21:54 by wting             #+#    #+#             */
-/*   Updated: 2022/04/16 18:54:06 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/16 20:37:29 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_printbox(int **box, int n)
+void	ft_printbox(int **b, int n)
 {
 	int cx;
 	int cy;
@@ -23,11 +23,13 @@ void	ft_printbox(int **box, int n)
 		cx = 0;
 		while (cx < n)
 		{
-			box[cy][cx] = box[cy][cx] + 48;
-			write(1, &box[cy][cx], 1);
+			b[cy][cx] = b[cy][cx] + 48;
+			write(1, &b[cy][cx], 1);
+			if (cx != n - 1)
+				write(1, " ", 1);
 			cx++;
 		}
-		write(1, '\n', 1);
-		cy++
+		write(1, "\n", 1);
+		cy++;
 	}
 }
