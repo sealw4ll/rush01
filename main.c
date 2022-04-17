@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
+/*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 19:06:51 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 15:20:10 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 17:40:53 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,19 @@ int	main(int argc, char *argv[])
 	char	*input;
 
 	input = argv[1];
-	box = NULL;
-	i_array = NULL;
+	g_box = NULL;
+	g_i_array = NULL;
 	if (argc != 2)
 	{
 		write(1, "Error: no input.\n", 16);
 		return (0);
 	}
 	g_n = ft_boxsize(input);
-	box = ft_rush(input);
-	ft_printbox(box);
+	//g_box = ft_rush(input);
+	if (ft_rush(input) == 0)
+		write(1, "error", 5);
+	else
+		g_box = ft_rush(input);
+	ft_printbox(g_box);
 	return (0);
 }

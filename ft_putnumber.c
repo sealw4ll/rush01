@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnumber.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
+/*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 10:58:14 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 15:26:22 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 17:38:37 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ int	**ft_putnumber(void)
 		j = 0;
 		while (j < g_n)
 		{
-			box[i][j] = box[i][j] + (j + 1);
+			g_box[i][j] = g_box[i][j] + (j + 1);
 			j++;
 		}
 		i++;
 	}
-	return (box);
+	return (g_box);
 }
