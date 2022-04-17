@@ -6,7 +6,7 @@
 /*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 13:54:33 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 21:08:28 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/17 22:52:37 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,17 +89,15 @@ int	ft_checkleft(int row)
 	int	view;
 	int	j;
 	int	total;
-	int	c;
 
 	total = 0;
 	view = 0;
 	j = 0;
 	while (j < g_n)
 	{
-		c = g_box[row][j];
-		if (c > view)
+		if (g_box[row][j] > view)
 		{
-			view = c;
+			view = g_box[row][j];
 			total++;
 		}
 		j++;
