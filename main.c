@@ -6,14 +6,14 @@
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 19:06:51 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 11:24:24 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 12:03:15 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include "rush01Functions.h"
+#include "allft.h"
 
 int main()
 {

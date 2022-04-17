@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rowValid.c                                      :+:      :+:    :+:   */
+/*   ft_mallocBox.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/17 08:27:12 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 11:05:19 by lchew            ###   ########.fr       */
+/*   Created: 2022/04/16 17:11:40 by lchew             #+#    #+#             */
+/*   Updated: 2022/04/17 11:25:37 by soon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*int ft_rowValid(int **i_array, int **box, int *i, int *j)
+#include <stdlib.h>
+
+int	**ft_mallocbox(int **box, int n)
 {
-    if (j == 0 && box[i][j] <= i_array[3][i])
-        return (box[i][j]);
-    while ()
-    {
-        box[i][j]++;
-    }
-    
-}*/
+	int	i;
+
+	i = 0;
+	box = malloc(sizeof (int *) * n);
+	while (i < n)
+	{
+		box[i] = malloc(sizeof (int) * n);
+		i++;
+	}
+	return (box);
+}

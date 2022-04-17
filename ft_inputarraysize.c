@@ -1,42 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_inputArray.c                                    :+:      :+:    :+:   */
+/*   ft_inputArraySize.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/16 19:39:35 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 11:06:11 by lchew            ###   ########.fr       */
+/*   Created: 2022/04/17 08:04:33 by lchew             #+#    #+#             */
+/*   Updated: 2022/04/17 11:24:18 by soon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
-#include "rush01Functions.h"
 
-int	**ft_inputArray(int **i_array, char *input, int n)
+int	**ft_inputarraysize(int **i_array, int n)
 {
-	int i;
-    int j;
-    int c;
-	
-    i = 0;
-    c = 0;
-	i_array = ft_inputArraySize(i_array, n);
-    while (i < 4)
-    {
-        j = 0;
-        while (j < n)
-        {
-            if (input[c] >= '1' && input[c] <= '9')
-			{
-                i_array[i][j] = (input[c] - 48);
-				j++;
-			}
-            c++;
-        }
-        i++;
-    }
+	int	i;
+
+	i = 0;
+	i_array = malloc(sizeof (int *) * 4);
+	while (i < n)
+	{
+		i_array[i] = malloc(sizeof (int) * n);
+		i++;
+	}
 	return (i_array);
 }
-
