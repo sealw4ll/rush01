@@ -1,36 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rush01.c                                        :+:      :+:    :+:   */
+/*   allft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/16 12:37:49 by wting             #+#    #+#             */
-/*   Updated: 2022/04/17 11:06:11 by lchew            ###   ########.fr       */
+/*   Created: 2022/04/17 10:59:39 by lchew             #+#    #+#             */
+/*   Updated: 2022/04/17 11:39:20 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include "rush01Functions.h"
+#ifndef ALLFT_H
+# define ALLFT_H
 
-int	**ft_rush(char *input, int **box, int **i_array, int n)
-{
-	int	i;
-	//int	j;
+int		ft_boxsize(char *input);
+int		**ft_inputArray(int **i_array, char *input, int n);
+int		**ft_inputArraySize(int **i_array, int n);
+int		**ft_mallocBox(int **box, int n);
+void	ft_printbox(int **b, int n);
+int		**ft_rush(char *input, int **box, int **i_array, int n);
 
-	i = 0;
-	box = ft_mallocBox(box, n);
-	i_array = ft_inputArray(i_array, input, n);
-
-	//while (i < n)
-	//{
-
-	//}
-
-	return (box);	
-}
-
-
-
-
+#endif

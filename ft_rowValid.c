@@ -6,11 +6,11 @@
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 08:27:12 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 09:17:27 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 11:05:19 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_rowValid(int **i_array, int **box, int *i, int *j)
+/*int ft_rowValid(int **i_array, int **box, int *i, int *j)
 {
     if (j == 0 && box[i][j] <= i_array[3][i])
         return (box[i][j]);
@@ -19,4 +19,4 @@ int ft_rowValid(int **i_array, int **box, int *i, int *j)
         box[i][j]++;
     }
     
-}
+}*/

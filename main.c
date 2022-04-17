@@ -6,17 +6,14 @@
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 19:06:51 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 08:24:57 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 11:24:24 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-
-int	ft_boxsize(char *input);
-int	**ft_rush(char *input, int **box, int **i_array, int n);
-void	ft_printbox(int **b, int n);
+#include "rush01Functions.h"
 
 int main()
 {
