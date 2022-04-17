@@ -6,14 +6,13 @@
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 17:11:40 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 14:43:28 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 15:26:59 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "allft.h"
 
-int	**ft_mallocbox()
+int	**ft_mallocbox(void)
 {
 	int	i;
 

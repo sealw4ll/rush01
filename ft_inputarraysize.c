@@ -6,13 +6,13 @@
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 08:04:33 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 14:48:29 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 15:27:12 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "allft.h"
 
-int	**ft_inputarraysize()
+int	**ft_inputarraysize(void)
 {
 	int	i;
 
