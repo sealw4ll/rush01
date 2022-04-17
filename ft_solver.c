@@ -6,7 +6,7 @@
 /*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 15:45:45 by wting             #+#    #+#             */
-/*   Updated: 2022/04/17 17:42:28 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/17 19:40:02 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,14 @@ int	ft_solver(int row, int col)
 	while (x <= g_n)
 	{
 		if (ft_checkall(row, col, x) == 1)
+		{
 			g_box[row][col] = x; 
+			if (ft_solver(row, col + 1) == 1)
+				return (1);
+		}
+		g_box[row][col] = 0;
 		x++;
-		if (ft_solver(row, col + 1) == 1)
-		return (1);
+		
 	}
 	return (0);
 }

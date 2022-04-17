@@ -6,7 +6,7 @@
 /*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 19:06:51 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 17:40:53 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/17 19:51:33 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,9 @@ int	main(int argc, char *argv[])
 	if (ft_rush(input) == 0)
 		write(1, "error", 5);
 	else
+	{
 		g_box = ft_rush(input);
 	ft_printbox(g_box);
+	}
 	return (0);
 }

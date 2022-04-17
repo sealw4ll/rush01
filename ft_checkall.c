@@ -6,7 +6,7 @@
 /*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 13:54:33 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 17:46:49 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/17 19:40:02 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int	ft_checkbottom(int col)
 
     total = 0;
     view = 0;
-	i = g_n;
-	while (i > g_n)
+	i = g_n -1;
+	while (i >= 0)
 	{
 	    if (g_box[i][col] > view)
 	    {
@@ -30,7 +30,7 @@ int	ft_checkbottom(int col)
 	    }
 		i--;
     }
-	if (total <= g_i_array[1][col])
+	if (total == g_i_array[1][col])
 		return (1);
 	else
 		return (0);
@@ -54,7 +54,7 @@ int ft_checktop(int col)
 	    }
 		i++;
     }
-	if (total <= g_i_array[0][col])
+	if (total == g_i_array[0][col])
 		return (1);
 	else
 		return (0);
@@ -68,8 +68,8 @@ int ft_checkright(int row)
 
     total = 0;
     view = 0;
-	j = g_n;
-	while (j > g_n)
+	j = g_n - 1;
+	while (j >= 0)
 	{
 	    if (g_box[row][j] > view)
 	    {
@@ -78,7 +78,7 @@ int ft_checkright(int row)
 	    }
 		j--;
     }
-	if (total <= g_i_array[3][row])
+	if (total == g_i_array[3][row])
 		return (1);
 	else
 		return (0);
@@ -89,37 +89,49 @@ int ft_checkleft(int row)
     int view;
     int j;
     int total;
-
+    int c;
     total = 0;
     view = 0;
 	j = 0;
+	
 	while (j < g_n)
 	{
-	    if (g_box[row][j] > view)
+	    c = g_box[row][j];
+	    if (c > view)
 	    {
-	        view = g_box[row][j];
+	        view = c;
 	        total++;
 	    }
 		j++;
     }
-	if (total <= g_i_array[2][row])
+	if (total == g_i_array[2][row])
 		return (1);
 	else
 		return (0);
 }
 
-int ft_directions(int row, int col)
+int ft_directions(int row, int col, int x)
 {
-	if (ft_checkleft(row) == 0)
-		return (0);
-	else if (ft_checkright(row) == 0)
-		return (0);
-	else if (ft_checktop(col) == 0)
-		return (0);
-	else if (ft_checkbottom(col) == 0)
-		return (0);
-	else
-		return (1);
+    int res;
+
+    g_box[row][col] = x;
+    res = 1;
+    if (col == g_n - 1)
+    {
+	    if (ft_checkleft(row) == 0)
+		    res = 0;
+	    if (ft_checkright(row) == 0)
+		    res = 0;
+    }
+    if (row == g_n - 1)
+    {
+	    if (ft_checktop(col) == 0)
+		    res = 0;
+	    if (ft_checkbottom(col) == 0)
+		    res = 0;
+    }
+    g_box[row][col] = 0;
+	return (res);
 }
 
 int ft_checkall(int row, int col, int x)
@@ -140,7 +152,7 @@ int ft_checkall(int row, int col, int x)
 			return (0);
 		j++;
 	}
-	if	(ft_directions(row, col) == 0)
+	if	(ft_directions(row, col, x) == 0)
 		return (0);
 	return (1);
 }

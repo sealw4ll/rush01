@@ -6,7 +6,7 @@
 /*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 10:59:39 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 17:46:26 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/17 19:38:42 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int		**ft_rush(char *input);
 int		**ft_putnumber(void);
 int		ft_solver(int row, int col);
 int		ft_checkall(int row, int col, int x);
-int		ft_directions(int row, int col);
+int		ft_directions(int row, int col, int x);
 int		ft_checkleft(int row);
 int		ft_checkright(int row);
 int		ft_checktop(int col);

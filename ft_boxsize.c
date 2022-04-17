@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_boxsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
+/*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 12:37:49 by wting             #+#    #+#             */
-/*   Updated: 2022/04/17 14:24:20 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 19:54:16 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int	ft_boxsize(char *input)
 	if ((count % 4) != 0 || count == 0)
 	{
 		write(1, "incorrect size", 14);
+		write(1, "\n", 1);
 		return (0);
 	}
 	count = (count / 4);
