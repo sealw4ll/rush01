@@ -6,20 +6,22 @@
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 10:58:14 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 11:52:15 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 14:43:28 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int **ft_putnumber(int **box, int n)
+#include "allft.h"
+
+int **ft_putnumber()
 {
     int i;
     int j;
 
     i = 0;
-    while (i < n)
+    while (i < g_n)
     {
         j = 0;
-        while (j < n)
+        while (j < g_n)
         {
             box[i][j] = box[i][j] + (j + 1);
             j++;

@@ -6,28 +6,27 @@
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 12:37:49 by wting             #+#    #+#             */
-/*   Updated: 2022/04/17 12:02:17 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 14:43:28 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include "rush01Functions.h"
+#include "allft.h"
 
-int	**ft_rush(char *input, int **box, int **i_array, int n)
+int	**ft_rush(char *input)
 {
-	int	i;
-	//int	j;
+/* 	int row;
+	int col;
+ */
 
-	i = 0;
-	box = ft_mallocBox(box, n);
-	i_array = ft_inputArray(i_array, input, n);
+	box = ft_mallocbox();
+	i_array = ft_inputarray(input);
 
-	//while (i < n)
-	//{
+	box = ft_putnumber();
 
-	//}
+/* 	while ();
+		if (i_array != view)
 
+ */
 	return (box);	
 }
 

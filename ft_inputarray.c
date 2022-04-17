@@ -6,17 +6,13 @@
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 19:39:35 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 12:01:53 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 14:48:29 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 #include "allft.h"
 
-int	**ft_inputarraysize(int **i_array, int n);
-
-int	**ft_inputarray(int **i_array, char *input, int n)
+int	**ft_inputarray(char *input)
 {
 	int	i;
 	int	j;
@@ -24,11 +20,11 @@ int	**ft_inputarray(int **i_array, char *input, int n)
 
 	i = 0;
 	c = 0;
-	i_array = ft_inputarraysize(i_array, n);
+	i_array = ft_inputarraysize();
 	while (i < 4)
 	{
 		j = 0;
-		while (j < n)
+		while (j < g_n)
 		{
 			if (input[c] >= '1' && input[c] <= '9')
 			{

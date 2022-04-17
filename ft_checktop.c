@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rowValid.c                                      :+:      :+:    :+:   */
+/*   ft_checktop.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/17 08:27:12 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 11:05:19 by lchew            ###   ########.fr       */
+/*   Created: 2022/04/17 13:54:33 by lchew             #+#    #+#             */
+/*   Updated: 2022/04/17 14:03:18 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*int ft_rowValid(int **i_array, int **box, int *i, int *j)
+/* int ft_checktop(int **i_array, int **box, int n)
 {
-    if (j == 0 && box[i][j] <= i_array[3][i])
-        return (box[i][j]);
-    while ()
-    {
-        box[i][j]++;
-    }
-    
-<<<<<<< HEAD:ft_rowValid.c
-}*/
-=======
-}
->>>>>>> ba4208a0fb6ab2afa89947c8bbac35a42b52eaa3:ft_rowvalid.c
+    int view;
+    int i;
+    int j;
+
+    view = 0;
+	j = 0;
+	while (j < n)
+	{
+
+	}
+
+
+} */

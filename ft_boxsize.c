@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_boxsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wting <wting@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 12:37:49 by wting             #+#    #+#             */
-/*   Updated: 2022/04/17 10:54:44 by soon             ###   ########.fr       */
+/*   Updated: 2022/04/17 14:24:20 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "allft.h"
 
 int	ft_boxsize(char *input)
 {

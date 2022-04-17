@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_valid.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/16 19:06:51 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 14:41:04 by lchew            ###   ########.fr       */
+/*   Created: 2022/04/17 08:27:12 by lchew             #+#    #+#             */
+/*   Updated: 2022/04/17 14:03:18 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "allft.h"
-
-int main()
+/* int ft_valid(int **i_array, int **box, int n)
 {
-	char	*input = "4 3 2 1 1 2 2 2 4 3 2 1 1 2 2 2";
+    int view;
+    int i;
+    int j;
 
-	box = NULL;
-	i_array = NULL;
-/*	if (argc != 2)
-	{
-		write(1, "Error: no input.\n", 16); 	
-		return 0;
-	}*/
-	g_n = ft_boxsize(input);
-	box = ft_rush(input);
-	ft_printbox(box);
-
-	return 0;
-}
+    i = 0;
+    view = 0;
+    while (i < n)
+    {  
+        w
+        box[i][j]++;
+    }
+    return (view);
+} */
