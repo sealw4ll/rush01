@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_checkall.c                                      :+:      :+:    :+:   */
+/*   ft_directions.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 13:54:33 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 20:47:15 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/17 21:08:28 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,27 +108,4 @@ int	ft_checkleft(int row)
 		return (1);
 	else
 		return (0);
-}
-
-int	ft_checkall(int row, int col, int x)
-{
-	int	j;
-
-	j = 0;
-	while (j < g_n)
-	{
-		if (g_box[row][j] == x)
-			return (0);
-		j++;
-	}
-	j = 0;
-	while (j < g_n)
-	{
-		if (g_box[j][col] == x)
-			return (0);
-		j++;
-	}
-	if (ft_directions(row, col, x) == 0)
-		return (0);
-	return (1);
 }
