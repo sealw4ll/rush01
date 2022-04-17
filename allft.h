@@ -6,7 +6,7 @@
 /*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/17 10:59:39 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 19:38:42 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/17 20:50:31 by wting            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int		ft_checkright(int row);
 int		ft_checktop(int col);
 int		ft_checkbottom(int col);
 int		g_n;
-int 	**g_box;
-int 	**g_i_array;
+int		**g_box;
+int		**g_i_array;
 
 #endif
