@@ -6,7 +6,7 @@
 /*   By: wting <wting@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 12:37:49 by wting             #+#    #+#             */
-/*   Updated: 2022/04/16 16:44:56 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/17 10:54:44 by soon             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_boxsize(char *input)
 {
-	int count;
-	int i;
+	int	count;
+	int	i;
 
 	i = 0;
 	count = 0;
