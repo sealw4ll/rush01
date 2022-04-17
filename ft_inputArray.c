@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   inputarray.c                                       :+:      :+:    :+:   */
+/*   ft_inputArray.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 19:39:35 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/16 21:17:11 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 08:13:01 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdio.h>
-int **createbox(int **box, int n);
+int **ft_inputArraySize(int **i_array, int n);
 
-int	**inputarray(int **i_array, char *input, int n)
+int	**ft_inputArray(int **i_array, char *input, int n)
 {
 	int i;
     int j;
@@ -22,7 +22,7 @@ int	**inputarray(int **i_array, char *input, int n)
 	
     i = 0;
     c = 0;
-	i_array = createbox(i_array, 4);
+	i_array = ft_inputArraySize(i_array, n);
     while (i < 4)
     {
         j = 0;

@@ -6,7 +6,7 @@
 /*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 19:06:51 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/16 22:14:54 by lchew            ###   ########.fr       */
+/*   Updated: 2022/04/17 08:24:57 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdlib.h>
 
 int	ft_boxsize(char *input);
-int **rush(char *input, int **ptr);
+int	**ft_rush(char *input, int **box, int **i_array, int n);
 void	ft_printbox(int **b, int n);
 
 int main()
@@ -36,7 +36,7 @@ int main()
 //	printf("%s\n", input);
 //	printf("%d\n", ft_boxsize(input));
 	n = ft_boxsize(input);
-	box = rush(input, box);
+	box = ft_rush(input, box, i_array, n);
 	ft_printbox(box, n);
 
 	return 0;

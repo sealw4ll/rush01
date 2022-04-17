@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   createbox.c                                        :+:      :+:    :+:   */
+/*   ft_inputArraySize.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lchew <lchew@42kl.edu.my>                  +#+  +:+       +#+        */
+/*   By: lchew <lchew@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/16 17:11:40 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/16 18:30:27 by lchew            ###   ########.fr       */
+/*   Created: 2022/04/17 08:04:33 by lchew             #+#    #+#             */
+/*   Updated: 2022/04/17 08:06:02 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-int	**createbox(int **box, int n)
+int	**ft_inputArraySize(int **i_array, int n)
 {
 	int i;
 	
 	i = 0;
-	box = malloc(sizeof(int *)*n);
+	i_array = malloc(sizeof(int *)*4);
 	while (i < n)
 	{
-		box[i] = malloc(sizeof(int)*n);
+		i_array[i] = malloc(sizeof(int)*n);
 		i++;
 	}
-	return (box);
+	return (i_array);
 }
