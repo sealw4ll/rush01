@@ -6,13 +6,13 @@
 /*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 19:39:35 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 17:38:37 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/18 10:08:48 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "allft.h"
 
-int	**ft_inputarray(char *input)
+int	**ft_inputarray(void)
 {
 	int	i;
 	int	j;
@@ -26,9 +26,9 @@ int	**ft_inputarray(char *input)
 		j = 0;
 		while (j < g_n)
 		{
-			if (input[c] >= '1' && input[c] <= '9')
+			if (g_input[c] >= '1' && g_input[c] <= '9')
 			{
-				g_i_array[i][j] = (input[c] - 48);
+				g_i_array[i][j] = (g_input[c] - 48);
 				j++;
 			}
 			c++;

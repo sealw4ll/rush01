@@ -6,7 +6,7 @@
 /*   By: wting <wting@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 19:06:51 by lchew             #+#    #+#             */
-/*   Updated: 2022/04/17 21:55:24 by wting            ###   ########.fr       */
+/*   Updated: 2022/04/18 10:09:50 by lchew            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 int	main(int argc, char *argv[])
 {
-	char	*input;
-
-	input = argv[1];
+	g_input = argv[1];
 	g_box = NULL;
 	g_i_array = NULL;
 	if (argc != 2)
@@ -24,18 +22,20 @@ int	main(int argc, char *argv[])
 		write(1, "Error\n", 6);
 		return (0);
 	}
-	if (ft_boxsize(input) == 0)
+	if (ft_boxsize() == 0)
 	{
 		write(1, "Error\n", 6);
 		return (0);
 	}
-	g_n = ft_boxsize(input);
-	if (ft_rush(input) == 0)
+	g_n = ft_boxsize();
+	if (ft_rush() == 0)
 	{
 		write(1, "Error\n", 6);
 		return (0);
 	}
-	g_box = ft_rush(input);
+	g_box = ft_rush();
 	ft_printbox(g_box);
+	free(g_box);
+	free(g_i_array);
 	return (0);
 }
