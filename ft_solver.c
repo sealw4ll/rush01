@@ -24,8 +24,6 @@ int	ft_solver(int row, int col)
 		row++;
 		col = 0;
 	}
-	if (g_box[row][col] > 0)
-		return (ft_solver(row, col + 1));
 	while (x <= g_n)
 	{
 		if (ft_checkall(row, col, x) == 1)
